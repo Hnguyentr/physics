@@ -68,7 +68,6 @@ button:hover{
 .mycursor{
     cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
     height: 50px;
-    border: 1px solid red;
     animation: col 5s infinite;
 }
 
