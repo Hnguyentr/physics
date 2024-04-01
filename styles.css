@@ -60,6 +60,11 @@ button:hover{
     cursor: pointer;
     transition: 0.5s;
 }
+table {
+    border-color: rgb(82, 86, 89);
+    font-size: x-large;
+    text-align: center;
+}
 .equal{
     width: 115px;
     border-radius: 40px;
