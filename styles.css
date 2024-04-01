@@ -103,11 +103,17 @@ button:hover{
     padding: 168px;
     height: 100%;
     width: 33%;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
 .class2:hover {
     background-color:  rgb(34, 79, 175);
-    cursor: pointer;
+
     transition: 0.5s;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
 .class3{
     background-color: #b3b3b3;
@@ -116,11 +122,17 @@ button:hover{
     padding: 20px;
     height: 900px;
     width: 33%;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
 .class3:hover {
     background-color:  #dddddd;
-    cursor: pointer;
+
     transition: 0.5s;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
 .class4{
     background-color: rgb(138, 0, 0);
@@ -129,9 +141,15 @@ button:hover{
     padding: 20px;
     height: 900px;
     width: 33%;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
 .class4:hover {
     background-color:  rgb(138, 27, 27);
-    cursor: pointer;
+
     transition: 0.5s;
+    cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
+    height: 50px;
+    animation: col 5s infinite;
 }
