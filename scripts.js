@@ -1,12 +1,18 @@
-let outputScreen = document.getElementById("output-screen");
-
-
-// for output
-function display(num){
-    outputScreen.value += num;
+let outputScreen = document.getElementById("display");
+//display number
+function numberButton(num){
+    outputScreen.value+=num;
+}
+// for clear and dellete
+function Clear(){
+    outputScreen.value = "";
 }
 
-// for operator
+function del(){
+    outputScreen.value =outputScreen.value.slice(0,-1);
+}
+
+// operation
 
 function calculate(){
     try{
@@ -15,14 +21,7 @@ function calculate(){
     catch(err){
         alert("Invalid")
     }
-
 }
-
-// for clear and dellete
-function Clear(){
-    outputScreen.value = "";
-}
-
-function del(){
-    outputScreen.value =outputScreen.value.slice(0,-1);
+function operationButton(operat) {
+    outputScreen.value+=operat;
 }
