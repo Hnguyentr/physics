@@ -8,68 +8,12 @@ html[data-theme='dark']
     font-family: sans-serif;
     outline: invert;
 }
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.calculator{
-    background-color: #ecf0f3;
-    padding: 15px;
-    border-radius: 30px;
-    box-shadow:inset 5px 5px 12px #ffffff,
-                     5px 5px 12px rgba(0,0,0,.16);
-    display: flex;
-    grid-template-columns: repeat(4,70px); 
-}
-input{
-     grid-column: span 4;
-     height: 70px; 
-     width: 280px;
-     background-color: rgb(82,86,89);
-     box-shadow: inset -5px -5px 12px rgb(82,86,89),
-                 inset 5px 5px  12px rgb(82,86,89);
-    border: none;
-    border-radius: 30px;
-    color: rgb(0, 255, 42);
-    font-size: 27px;
-    font-weight: 700;
-    text-align: end;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 20px;
-
-}
-button{
-    height: 48px;
-    width: 48px;
-    background-color: rgb(82,86,89);
-    box-shadow: -5px -5px 12px rgb(82,86,89),
-                5px 5px 12px rgb(82,86,89);
-    border-radius: 50%;
-    border: none;
-    margin: 10px;
-    font-size: 18px;
-    animation: col 5s infinite;
-}
-button:hover{
-    background-color: rgb(121, 24, 24);
-    cursor: pointer;
-    transition: 0.5s;
-}
 table {
     border-color: rgb(82, 86, 89);
     font-size: x-large;
     text-align: center;
 }
-.equal{
-    width: 115px;
-    border-radius: 40px;
-    animation: col 5s infinite;
-}
+
 .mycursor{
     cursor: url("https://cdn-icons-png.flaticon.com/128/3119/3119214.png"), auto;
     animation: col 5s infinite;
