@@ -6,40 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
-<body class="mycursor">
+<body>
     <div class="container">
-        <div class="Calculator">
-            <input type="text" placeholder="0" id="output-screen"/>
+        <div class="CALCULATOR">
+            <input type="text" id="display" disabled>
             <div>
-                <button onclick="Clear()" >AC</button>
-                <button onclick="del()">DEL</button>
-                <button onclick="display('%')">%</button>
-                <button onclick="display('/')">/</button>
+                <button onclick="shift()" class="casio-button gray">shift</button>
+                <button onclick="alpha()" class="casio-button gray">alpha</button>
+                <button onclick="mode()" class="casio-button gray">mode</button>
+                <button onclick="on()" class="casio-button red">ON</button>
+                <button onclick="off()" class="casio-button green">OFF</button>
             </div>
             <div>
-                <button onclick="display('7')">7</button>
-                <button onclick="display('8')">8</button>
-                <button onclick="display('9')">9</button>
-                <button onclick="display('*')">*</button>
+                <button onclick="CALC()" class="casio-button black">CALC</button>
+                <button onclick="derivative()" class="casio-button black">d/dx</button>
+                <button onclick="integral()" class="casio-button black">∫</button>
+                <button class="casio-button black" onclick="squareroot()">√</button>
+                <button class="casio-button black" onclick="logarite()">log</button>
             </div>
             <div>
-                <button onclick="display('4')">4</button>
-                <button onclick="display('5')">5</button>
-                <button onclick="display('6')">6</button>
-                <button onclick="display('-')">-</button>
+                <button onclick="sine()" class="casio-button black">sin(x)</button>
+                <button onclick="cosine()" class="casio-button black">cos(x)</button>
+                <button onclick="tan()" class="casio-button black">tan(x)</button>
+                <button class="casio-button black" onclick="exponential()">exp</button>
+                <button class="casio-button black" onclick="square()">x²</button>
+            </div>
+            
+            <div>
+                <button onclick="numberButton(7)" class="casio-button numeric">7</button>
+                <button onclick="numberButton(8)" class="casio-button numeric">8</button>
+                <button onclick="numberButton(9)" class="casio-button numeric">9</button>
+                <button onclick="del()" class="casio-button delete">DEL</button>
+                <button onclick="Clear()" class="casio-button clear">AC</button>
             </div>
             <div>
-                <button onclick="display('1')">1</button>
-                <button onclick="display('2')">2</button>
-                <button onclick="display('3')">3</button>
-                <button onclick="display('+')">+</button>
+                <button onclick="numberButton(4)" class="casio-button numeric">4</button>
+                <button onclick="numberButton(5)" class="casio-button numeric">5</button>
+                <button onclick="numberButton(6)" class="casio-button numeric">6</button>
+                <button onclick="operationButton('*')" class="casio-button operator">×</button>
+                <button onclick="operationButton('/')" class="casio-button operator">÷</button>
             </div>
             <div>
-                <button onclick="display('0')">0</button>
-                <button onclick="display('.')">.</button>
-                <button onclick="calculate()" class="equal">=</button>
+                <button onclick="numberButton(1)" class="casio-button numeric">1</button>
+                <button onclick="numberButton(2)" class="casio-button numeric">2</button>
+                <button onclick="numberButton(3)" class="casio-button numeric">3</button>
+                <button onclick="operationButton('+')" class="casio-button operator">+</button>
+                <button onclick="operationButton('-')" class="casio-button operator">−</button>
+            </div>
+            <div>
+                <button onclick="numberButton(0)" class="casio-button numeric">0</button>
+                <button onclick="decimalPoint()" class="casio-button ">.</button>
+                <button onclick="percentage()" class="casio-button black">%</button>
+                <button onclick="previous()" class="casio-button white">ans</button>
+                <button onclick="calculate()" class="casio-button equal">=<span class="equalsign"></span></button>
             </div>
         </div>
     </div>
